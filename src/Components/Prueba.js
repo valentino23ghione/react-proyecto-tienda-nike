@@ -1,7 +1,7 @@
 function Prueba() {
 return (
 <div className="App">
-<h1>Hola Mundo</h1>
+<h1>Tienda Nike</h1>
 
 </div>
 

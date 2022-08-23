@@ -1,5 +1,5 @@
 import React from "react";
-
+import CartWidget from ".Components/CartWidget";
 const Navbar=()=>{
 
 return(
@@ -15,7 +15,9 @@ return(
         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         <a class="nav-link" href="#">Productos</a>
         <a class="nav-link" href="#">Contacto</a>
-        
+        <a class="nav-link" href="#">
+
+        </a>
       </div>
     </div>
   </div>
