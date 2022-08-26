@@ -1,4 +1,4 @@
-const CartWidget = () => {
+export const CartWidget = () => {
 return (
 <>
 

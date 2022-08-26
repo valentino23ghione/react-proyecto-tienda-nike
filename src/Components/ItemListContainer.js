@@ -12,3 +12,4 @@ const {nombre, apellido, mensaje} = props
 )
     
 }
+export default ItemListContainer
