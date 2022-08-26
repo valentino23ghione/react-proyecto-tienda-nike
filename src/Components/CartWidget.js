@@ -12,10 +12,7 @@ return (
 
 </div>
 
-<div>
-<ItemCount></ItemCount>
 
-</div>
 
 
 

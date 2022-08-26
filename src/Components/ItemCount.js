@@ -1,39 +1,53 @@
 import { useState } from "react";
-export const ItemCount = ({stock, initial, agregarProducto})=>{
-const [contador, setContador]= useState(initial);
-const incrementar= ()=> {
-    if(contador<stock){
-        setContador(contador + 1)
+export function ItemCount (props){
+   const {stock} = props 
+   const [contador, setContador] = useState(0)
+
+   function sumaNum (){
+    if ( contador < stock){
+        setContador (contador + 1)
+    }
+    else{
+        alert(" No hay mas stock correspondiente")
     }
 
 
 }
 
-const decrementar= ()=> {
-    if(contador>0){
-        setContador(contador - 1)
+function restaNum(){
+    if ( contador > 0){
+        setContador (contador - 1 )
     }
-    
 }
-return (
+
+function agregarProd(){
+    if (contador  === 0)
+    {
+
+    }
+
+    else if (contador === 1) {
+        alert(`Se agregó ${contador} el producto al carrito`)
+    }
+    else{
+        alert(`Se agregaron ${contador} los productos al carrito`)
+    }
+
+}
+
+
+
+return(
 <div>
-<p>Numero de clicks {contador}</p>
-<button onClick={incrementar}>Incrementar</button>
-<button onClick={decrementar}>Decrementar</button>
-<button onClick={()=>(agregarProducto(contador))} 
-style={{background: contador>1 ? "green" : "white"}}>Agregar al Carrito</button>
-<button onClick={()=>(agregarProducto(contador))} 
-className={`btnDanger ${contador>1 ? "activo" : "inactivo"}`}>Agregar al Carrito</button>
-{
-    contador>1 ? 
-    <p>usted ya puede agregar productos</p>
-    :
-    <p>Incremente los Productos</p>
-}
+    <p> Productos seleccionados {contador} </p>
+    <button onClick={sumaNum}> + </button>
+    <button onClick={restaNum}> - </button>
+    <hr></hr>
+    <button onClick={agregarProd}  > agregar al carrito </button>
 </div>
-
-
 )
+
+
 
 
 }
