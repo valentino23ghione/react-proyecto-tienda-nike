@@ -17,7 +17,7 @@ const decrementar= ()=> {
 }
 return (
 <div>
-<p>Numero de clics {contador}</p>
+<p>Numero de clicks {contador}</p>
 <button onClick={incrementar}>Incrementar</button>
 <button onClick={decrementar}>Decrementar</button>
 <button onClick={()=>(agregarProducto(contador))} 

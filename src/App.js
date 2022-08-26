@@ -27,6 +27,7 @@ function App() {
     <Navbar></Navbar>
     <ItemListContainer nombre="valentino" apellido="ghione" mensaje="Bienvenidos a Tienda Nike"></ItemListContainer>
     <ItemCount stock={15} inital={0} agregarProducto={agregar}></ItemCount>
+    
     </>
   );
 }
