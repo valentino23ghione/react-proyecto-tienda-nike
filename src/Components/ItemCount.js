@@ -1,5 +1,5 @@
 import { useState } from "react";
-export const Contador = ({stock, initial, agregarProducto})=>{
+export const ItemCount = ({stock, initial, agregarProducto})=>{
 const [contador, setContador]= useState(initial);
 const incrementar= ()=> {
     if(contador<stock){
