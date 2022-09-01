@@ -1,15 +1,15 @@
-export function ItemListContainer (props) {
-const {nombre, apellido, mensaje} = props
-    return(
+import ItemList from "./ItemList"
+export function ItemListContainer (props) 
+const ItemListContainer = () => {
+
+return (
 <div>
-<h1> {mensaje}</h1>
-<p> mi nombre es {nombre} y mi apellido {apellido} </p>
+<ItemList></ItemList>
 
 </div>
 
-
-
 )
-    
+
+
 }
 export default ItemListContainer
