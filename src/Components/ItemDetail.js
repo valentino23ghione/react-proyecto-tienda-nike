@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import getFetch from "../../helper/helper.js";
+import getFetch from "./helper/helper.js";
+
 
 const ItemDetail = () => {
 const [data, setData] = useState({})

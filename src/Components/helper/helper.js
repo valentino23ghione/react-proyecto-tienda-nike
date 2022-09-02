@@ -1,18 +1,18 @@
-
-import Airforce from "../src/Components/Assets/img/AirforceWhite.png"
-import Airforce from "../src/Components/Assets/img/Airforce2.png"
-import Airforce from "../src/Components/Assets/img/Airforce3.png"
-import Airforce from "../src/Components/Assets/img/Airforce4.png"
-import NikeDunk from "../src/Components/Assets/img/NikeDunk1.png"
-import NikeDunk from "../src/Components/Assets/img/NikeDunk2.png"
-import Airforce from "../src/Components/Assets/img/Airforce5.png"
+import React from "react"
+import Airforce1 from "./src/Components/Assets/img/AirforceWhite.png"
+import Airforce2 from "./src/Components/Assets/img/Airforce2.png"
+import Airforce3 from "./src/Components/Assets/img/Airforce3.png"
+import Airforce4 from "./src/Components/Assets/img/Airforce4.png"
+import NikeDunk1 from "./src/Components/Assets/img/NikeDunk1.png"
+import NikeDunk2 from "./src/Components/Assets/img/NikeDunk2.png"
+import Airforce5 from "./src/Components/Assets/img/Airforce5.png"
 
 const productos = [
 
 {
 id: 1,
 name: "AirforceWhite",
-img: [Airforce],
+img: [Airforce1],
 year: "2015",
 price:600,
 description: "Airforcewhite con tonos fuertes blancos"
