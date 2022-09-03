@@ -1,4 +1,4 @@
-import React from "react"
+
 import Airforce1 from "./src/Components/Assets/img/AirforceWhite.png"
 import Airforce2 from "./src/Components/Assets/img/Airforce2.png"
 import Airforce3 from "./src/Components/Assets/img/Airforce3.png"
