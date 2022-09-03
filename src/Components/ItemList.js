@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import getFetch from "../../helper/helper.js";
-import Item from "../"
+import getFetch from "./helper/helper.js";
 
 const ItemList = () => {
 const [data,setData] = useState ([])
