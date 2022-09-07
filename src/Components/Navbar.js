@@ -13,10 +13,10 @@ return(
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        <a class="nav-link" href="#">Productos</a>
-        <a class="nav-link" href="#">Contacto</a>
-        <a class="nav-link" href="#">
+        <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a className="nav-link" href="#">Productos</a>
+        <a className="nav-link" href="#">Contacto</a>
+        <a className="nav-link" href="#">
         <CartWidget></CartWidget>
         </a>
       </div>

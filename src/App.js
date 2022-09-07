@@ -5,6 +5,7 @@ import  {ItemListContainer}  from './Components/ItemListContainer';
 import {ItemCount} from "./Components/ItemCount";
 import ItemDetail from './Components/ItemDetail';
 import ItemDetailContainer from './Components/ItemDetailContainer'
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 
 
 
@@ -12,13 +13,18 @@ import ItemDetailContainer from './Components/ItemDetailContainer'
 
 function App() {
 return (
-    <> 
+    <BrowserRouter> 
+
      <Navbar></Navbar>
-    <ItemListContainer></ItemListContainer>
+   <Route path="/catalogo" element= {<ItemListContainer></ItemListContainer>}> </Route>
     <ItemCount stock={15} inital={1} ></ItemCount>
-    <ItemDetailContainer></ItemDetailContainer>
+   <Route path='/Item/:id' element= {<ItemDetailContainer></ItemDetailContainer>}></Route>
+   
     <ItemDetail></ItemDetail>
-    </>
+
+
+
+    </BrowserRouter>
   );
 }
 
